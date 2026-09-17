@@ -2,31 +2,37 @@ package com.DSAPractice.Array;
 
 public class ssmallest {
 
-    public static int secondsmallest(int[] arr) {
+    // Find the second smallest DISTINCT element in the array.
+    // Time Complexity: O(n)
+    // Space Complexity: O(1)
+    public static int secondSmallest(int[] arr) {
 
-        int a = Integer.MAX_VALUE;
-        int b = Integer.MAX_VALUE;
+        int smallest = Integer.MAX_VALUE;
+        int secondSmallest = Integer.MAX_VALUE;
 
+        // Check every element once.
         for (int i = 0; i < arr.length; i++) {
 
-            if (arr[i] < a) {
-                b = a;
-                a = arr[i];
-
-            } else if (arr[i] < b && arr[i] > a) {
-                b = arr[i];
+            // Current element becomes the new smallest.
+            if (arr[i] < smallest) {
+                secondSmallest = smallest;
+                smallest = arr[i];
+            }
+            // Update second smallest only for a distinct value.
+            else if (arr[i] < secondSmallest && arr[i] > smallest) {
+                secondSmallest = arr[i];
             }
         }
 
-        return b;
+        return secondSmallest;
     }
 
     public static void main(String[] args) {
 
         int[] arr = {15, 20, 8, 5, 10};
 
-        int secondSmallest = secondsmallest(arr);
+        int result = secondSmallest(arr);
 
-        System.out.println(secondSmallest);
+        System.out.println("Second Smallest: " + result);
     }
 }
