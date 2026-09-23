@@ -8,6 +8,8 @@ Each problem has its own Java file. Run one file at a time.
 | Valid Palindrome | [Palindrome.java](Palindrome.java) | Check whether text reads the same both ways. | [LeetCode 125](https://leetcode.com/problems/valid-palindrome/) |
 | Count Vowels | [CountVowels.java](CountVowels.java) | Count a, e, i, o, u in the input. | Basic practice |
 | Character Frequency | [CharacterFrequency.java](CharacterFrequency.java) | Count occurrences of every character. | Basic practice |
+| Count Words | [CountWords.java](CountWords.java) | Count words separated by whitespace. | Basic practice |
+| Remove Spaces | [RemoveSpaces.java](RemoveSpaces.java) | Remove space characters from a string. | Basic practice |
 
 ## Quick dry run: Reverse `hello`
 
