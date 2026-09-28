@@ -2,23 +2,22 @@ package com.DSAPractice.Array;
 
 public class Sorted {
 
-    // Check whether the array is sorted in non-decreasing order.
-    // Equal adjacent values are allowed.
+    // Check karna hai ki array sorted order mein hai ya nahi
+    // Equal adjacent values allowed hain
     // Time Complexity: O(n)
     // Space Complexity: O(1)
     public static boolean isSorted(int[] arr) {
 
-        // Compare each element with the next element.
+        // Har element ko next element ke saath compare karenge
         for (int i = 0; i < arr.length - 1; i++) {
 
-            // If the current element is greater than the next,
-            // the array is not sorted.
+            // Agar current element next se bada hai toh array sorted nahi hai
             if (arr[i] > arr[i + 1]) {
                 return false;
             }
         }
 
-        // No decreasing pair was found.
+        // Koi decreasing pair nahi mila, matlab array sorted hai
         return true;
     }
 
