@@ -2,22 +2,22 @@ package com.DSAPractice.Array;
 
 public class CountPositiveNegativeZero {
 
-    // Array mein positive, negative aur zero count karna
+    // Array mein positive, negative aur zero count karna hai
     public static void CountNumbers(int[] arr) {
 
         int positive = 0;
         int negative = 0;
         int zero = 0;
 
-        // Har element ko check karenge
+        // Har element ko check karke uski category decide karenge
         for (int i = 0; i < arr.length; i++) {
 
             if (arr[i] > 0) {
-                positive++;
+                positive++; // 0 se bada hai toh positive
             } else if (arr[i] < 0) {
-                negative++;
+                negative++; // 0 se chhota hai toh negative
             } else {
-                zero++;
+                zero++; // Na positive na negative, toh zero
             }
         }
 
