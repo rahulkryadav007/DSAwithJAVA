@@ -2,7 +2,7 @@ package com.DSAPractice.Array;
 
 class Solution {
 
-    // Find the second largest DISTINCT element in the array.
+    // Array mein second largest DISTINCT element find karna hai
     // Time Complexity: O(n)
     // Space Complexity: O(1)
     public int secondLargest(int[] arr) {
@@ -10,15 +10,16 @@ class Solution {
         int largest = Integer.MIN_VALUE;
         int secondLargest = Integer.MIN_VALUE;
 
-        // Check every element once.
+        // Har element ko ek baar check karenge
         for (int i = 0; i < arr.length; i++) {
 
-            // Current element becomes the new largest.
+            // Agar current element largest se bada hai
+            // toh purana largest second largest ban jayega
             if (arr[i] > largest) {
                 secondLargest = largest;
                 largest = arr[i];
             }
-            // Update second largest only for a distinct value.
+            // Distinct value milne par second largest update karo
             else if (arr[i] > secondLargest && arr[i] < largest) {
                 secondLargest = arr[i];
             }
