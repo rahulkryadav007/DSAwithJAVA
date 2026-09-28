@@ -1,6 +1,6 @@
-// Problem: Find the smallest element in an array
+// Problem: Array mein smallest element find karna
 // Level: Easy | Pattern: Traversal
-// Approach: Track the minimum value while scanning the array.
+// Approach: Array scan karte hue minimum value track karenge
 // Time: O(n) | Space: O(1)
 
 import java.util.Arrays;
@@ -9,6 +9,8 @@ import java.util.Scanner;
 public class FindSmallest {
     public static int findSmallest(int[] arr) {
         int min = arr[0]; // Starting element ko smallest maan rahe hain
+
+        // Baaki elements ko ek-ek karke compare karenge
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] < min) {
                 min = arr[i]; // Chhota element mila toh min update karo
