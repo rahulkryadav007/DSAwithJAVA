@@ -2,25 +2,25 @@ package com.DSAPractice.Array;
 
 public class TwoSum {
 
-    // Brute Force approach: Check every possible pair.
+    // Har possible pair ko check karke target find kar rahe hain
     // Time Complexity: O(n^2)
     // Space Complexity: O(1)
     public static int[] twoSum(int[] arr, int target) {
 
-        // Pick the first element.
+        // Pehla element choose kar rahe hain
         for (int i = 0; i < arr.length; i++) {
 
-            // Pick the second element after i.
+            // i ke baad wala second element choose kar rahe hain
             for (int j = i + 1; j < arr.length; j++) {
 
-                // Check whether the pair adds up to target.
+                // Check kar rahe hain ki dono ka sum target ke equal hai ya nahi
                 if (arr[i] + arr[j] == target) {
                     return new int[] {i, j};
                 }
             }
         }
 
-        // Return -1 when no valid pair is found.
+        // Agar valid pair nahi mila toh -1 return kar rahe hain
         return new int[] {-1, -1};
     }
 
