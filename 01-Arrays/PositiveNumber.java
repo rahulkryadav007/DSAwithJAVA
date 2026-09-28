@@ -2,7 +2,7 @@ package com.DSAPractice.Array;
 
 public class PositiveNumber {
 
-    // Find the smallest missing positive integer.
+    // Array mein sabse chhota missing positive number find karna hai
     // Example: [3, 4, -1, 1] -> 2
     // Time Complexity: O(n)
     // Space Complexity: O(1) extra space
@@ -10,8 +10,8 @@ public class PositiveNumber {
 
         int n = arr.length;
 
-        // Step 1: Put each number x at index x - 1.
-        // Ignore negative numbers, zero, and numbers greater than n.
+        // Har number x ko uski correct position x - 1 par rakhne ki koshish karenge
+        // Negative, zero aur n se bade numbers ko ignore karenge
         for (int i = 0; i < n; i++) {
 
             while (arr[i] >= 1
@@ -20,14 +20,13 @@ public class PositiveNumber {
 
                 int temp = arr[i];
 
-                // Move the current value to its correct position.
+                // Current value ko uski correct position par move karo
                 arr[i] = arr[temp - 1];
                 arr[temp - 1] = temp;
             }
         }
 
-        // Step 2: The first index whose value is not i + 1
-        // represents the missing positive number.
+        // Jis index par value i + 1 nahi hai, wahi missing number hai
         for (int i = 0; i < n; i++) {
 
             if (arr[i] != i + 1) {
@@ -35,7 +34,7 @@ public class PositiveNumber {
             }
         }
 
-        // If 1 to n are present, the answer is n + 1.
+        // Agar 1 se n tak sab numbers present hain, toh answer n + 1 hoga
         return n + 1;
     }
 
