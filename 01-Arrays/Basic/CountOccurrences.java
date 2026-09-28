@@ -2,15 +2,15 @@ package com.DSAPractice.Array;
 
 public class CountOccurrences {
 
-    // Given element array mein kitni baar aaya, count karna
+    // Given element array mein kitni baar aaya, count karna hai
     public static int Count(int[] arr, int target) {
 
         int count = 0;
 
-        // Har element ko target se compare karenge
+        // Har element ko target ke saath compare karenge
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == target) {
-                count++;
+                count++; // Match mila toh count badha do
             }
         }
 
