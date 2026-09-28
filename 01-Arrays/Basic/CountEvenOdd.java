@@ -1,6 +1,6 @@
-// Problem: Count even and odd numbers in an array
+// Problem: Array mein even aur odd numbers count karna
 // Level: Easy | Pattern: Traversal
-// Approach: Check remainder when each number is divided by 2.
+// Approach: Har number ko 2 se divide karke remainder check karenge
 // Time: O(n) | Space: O(1)
 
 import java.util.Scanner;
@@ -9,10 +9,13 @@ import java.util.Arrays;
 public class CountEvenOdd {
     public static void count(int[] arr) {
         int even = 0, odd = 0;
+
+        // Array ke har element ko check karenge
         for (int value : arr) {
-            if (value % 2 == 0) even++; // 2 se divide hone par remainder 0 = even
-            else odd++;
+            if (value % 2 == 0) even++; // Remainder 0 hai toh number even hai
+            else odd++; // Warna number odd hai
         }
+
         System.out.println("Even count: " + even);
         System.out.println("Odd count: " + odd);
     }
