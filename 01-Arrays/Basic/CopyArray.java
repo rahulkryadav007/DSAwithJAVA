@@ -2,7 +2,7 @@ package com.DSAPractice.Array;
 
 public class CopyArray {
 
-    // Ek array ke elements ko dusre array mein copy karna
+    // Ek array ke elements ko dusre array mein copy karna hai
     public static int[] Copy(int[] arr) {
 
         int[] copy = new int[arr.length];
@@ -21,7 +21,7 @@ public class CopyArray {
 
         int[] result = Copy(arr);
 
-        // Copied array print karenge
+        // Copied array ko print karenge
         for (int x : result) {
             System.out.print(x + " ");
         }
