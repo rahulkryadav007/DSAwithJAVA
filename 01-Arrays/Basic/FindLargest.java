@@ -1,6 +1,6 @@
-// Problem: Find the largest element in an array
+// Problem: Array mein largest element find karna
 // Level: Easy | Pattern: Traversal
-// Approach: Keep track of the maximum value while visiting each element.
+// Approach: Har element ko check karke maximum value track karenge
 // Time: O(n) | Space: O(1)
 
 import java.util.Scanner;
@@ -8,7 +8,9 @@ import java.util.Arrays;
 
 public class FindLargest {
     public static int findLargest(int[] arr) {
-        int max = arr[0]; // Pehle element ko abhi tak ka largest maan lo
+        int max = arr[0]; // Pehle element ko abhi tak ka largest maan rahe hain
+
+        // Baaki elements ko ek-ek karke check karenge
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] > max) {
                 max = arr[i]; // Bada element mila toh max update karo
