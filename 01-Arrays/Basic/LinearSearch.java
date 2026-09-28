@@ -1,6 +1,6 @@
-// Problem: Find a target in an array using Linear Search
+// Problem: Linear Search se target find karna
 // Level: Easy | Pattern: Traversal
-// Approach: Check each element; return its index when it matches.
+// Approach: Har element ko check karke target se match karenge
 // Time: O(n) | Space: O(1)
 
 import java.util.Arrays;
@@ -8,10 +8,12 @@ import java.util.Scanner;
 
 public class LinearSearch {
     public static int search(int[] arr, int target) {
+
+        // Array ke har element ko check karenge
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == target) return i; // Match mila toh index return
+            if (arr[i] == target) return i; // Match mila toh index return karo
         }
-        return -1; // Target nahi mila
+        return -1; // Target nahi mila toh -1 return karo
     }
 
     public static void main(String[] args) {
