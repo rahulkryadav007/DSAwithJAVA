@@ -1,6 +1,6 @@
-// Problem: Find the sum of all array elements
+// Problem: Array ke saare elements ka sum find karna
 // Level: Easy | Pattern: Traversal
-// Approach: Add every element to a running total.
+// Approach: Har element ko running total mein add karenge
 // Time: O(n) | Space: O(1)
 
 import java.util.Arrays;
@@ -9,8 +9,10 @@ import java.util.Scanner;
 public class SumOfArray {
     public static int sum(int[] arr) {
         int total = 0;
+
+        // Har element ko total mein add karte jayenge
         for (int value : arr) {
-            total += value; // Har element ko total mein add karo
+            total += value;
         }
         return total;
     }
