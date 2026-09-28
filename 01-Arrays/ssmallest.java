@@ -2,7 +2,7 @@ package com.DSAPractice.Array;
 
 public class ssmallest {
 
-    // Find the second smallest DISTINCT element in the array.
+    // Array mein second smallest DISTINCT element find karna hai
     // Time Complexity: O(n)
     // Space Complexity: O(1)
     public static int secondSmallest(int[] arr) {
@@ -10,15 +10,16 @@ public class ssmallest {
         int smallest = Integer.MAX_VALUE;
         int secondSmallest = Integer.MAX_VALUE;
 
-        // Check every element once.
+        // Har element ko ek baar check karenge
         for (int i = 0; i < arr.length; i++) {
 
-            // Current element becomes the new smallest.
+            // Agar current element smallest se chhota hai
+            // toh purana smallest second smallest ban jayega
             if (arr[i] < smallest) {
                 secondSmallest = smallest;
                 smallest = arr[i];
             }
-            // Update second smallest only for a distinct value.
+            // Distinct value milne par second smallest update karo
             else if (arr[i] < secondSmallest && arr[i] > smallest) {
                 secondSmallest = arr[i];
             }
