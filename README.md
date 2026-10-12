@@ -2,51 +2,45 @@
 
 A practical repository where I am **learning, practicing, and improving Data Structures and Algorithms using Java**.
 
-This repository is my learning journey—from Arrays to Strings and further DSA topics. The focus is understanding logic, writing clean Java code, dry-running examples, and becoming confident with interview problems.
+My goal is to understand the logic behind each problem—not just memorize solutions. I practice with examples, dry runs, clean code, and complexity analysis.
 
----
-
-## 🎯 Goal
-- Learn DSA step by step using Java
-- Understand brute-force and optimized approaches
-- Practice dry runs and time/space complexity
-- Prepare for coding and technical interviews
-- Keep track of my learning journey
+## 🎯 Goals
+- Build strong DSA fundamentals with Java.
+- Compare brute-force and optimized approaches.
+- Practice dry runs, edge cases, and time/space complexity.
+- Prepare for coding interviews through consistent practice.
 
 ## 📚 Topics
 
 ### 01 — Arrays
-Problems include Two Sum, Move Zeroes, Reverse Array, Second Largest, Sort 0/1/2, Remove Duplicates, and more.
+Array fundamentals and problems such as Two Sum, Move Zeroes, Reverse Array, Second Largest, Sort 0/1/2, and Remove Duplicates.
 
-### 02 — Strings (Learning now)
-Strings notes cover definition, uses, immutability, important methods, String vs char[] vs StringBuilder, patterns, complexity, interview checks, and basic-to-advanced practice questions.
+### 02 — Strings
+Notes and examples for String basics, immutability, common methods, StringBuilder, HashMap patterns, and sliding window.
 
 - [Strings Notes & Roadmap](02-Strings/README.md)
 - [String Basics — Java examples](02-Strings/StringBasics.java)
 - [String Patterns — HashMap & Sliding Window](02-Strings/StringPatterns.java)
 
-## 🧠 How I Study Each Problem
-1. Problem statement and examples
-2. Brute-force idea
-3. Dry run in a table
-4. Java implementation
-5. Time and space complexity
-6. Edge cases and common mistakes
-7. Optimization and interview follow-ups
+### 03 — Two Pointers
+Use two indexes to solve problems efficiently, often by starting at opposite ends of a sorted array or string.
 
-## 💻 Language
-- **Java** ☕
+- [Two Sum in a Sorted Array — Java solution](03-Two-Pointers/TwoSumSorted.java)
 
-## 📈 Learning Roadmap
+## 🧠 How I Approach a Problem
+1. Understand the problem and examples.
+2. Think of a simple/brute-force approach first.
+3. Dry-run the logic with a small input.
+4. Write the Java solution.
+5. Check edge cases.
+6. Analyze time and space complexity.
+7. Optimize only after understanding the basic approach.
+
+## 🗺️ Learning Roadmap
 ```text
-Arrays → Strings → Searching → Sorting → Hashing → Two Pointers
-→ Sliding Window → Linked List → Stack → Queue → Recursion
+Arrays → Strings → Two Pointers → Sliding Window → Hashing
+→ Searching → Sorting → Linked List → Stack → Queue → Recursion
 → Trees → BST → Heap → Graph → Dynamic Programming
-```
-
-## 🛠️ Practice Philosophy
-```text
-Understand → Think → Write → Dry Run → Debug → Optimize → Repeat
 ```
 
 ## 📂 Repository Structure
@@ -57,20 +51,26 @@ DSAwithJAVA/
 │   ├── README.md
 │   ├── StringBasics.java
 │   └── StringPatterns.java
+├── 03-Two-Pointers/
+│   └── TwoSumSorted.java
 └── README.md
 ```
 
-## 📌 Progress
+## 📈 Progress
 - [x] Array fundamentals and initial problem set
-- [x] Create Strings notes: concepts, methods, patterns, complexity
-- [x] Add beginner Java String examples
-- [x] Add HashMap and sliding-window examples
+- [x] String notes and Java examples
+- [x] HashMap and sliding-window examples
+- [x] Add a Two Pointers example with a dry-run-friendly implementation
 - [ ] Complete the Strings practice question list
-- [ ] Continue to the next DSA topic
+- [ ] Add more Two Pointers problems
+- [ ] Continue with Linked List and Stack
 
-## 👨‍💻 About This Repository
-This is a personal learning and practice repository. Code and notes may be improved as my understanding grows.
+## 💻 Language
+- **Java** ☕
 
-**Learning DSA with Java, one problem at a time.** 💪
+## 👨‍💻 About
+This is a personal learning repository. Solutions and notes will improve as I practice more problems.
+
+**Understand → Think → Code → Dry Run → Debug → Optimize.**
 
 ⭐ Feel free to explore the solutions and follow the learning journey.
