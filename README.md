@@ -26,6 +26,8 @@ Notes and examples for String basics, immutability, common methods, StringBuilde
 Use two indexes to solve problems efficiently, often by starting at opposite ends of a sorted array or string.
 
 - [Two Sum in a Sorted Array — Java solution](03-Two-Pointers/TwoSumSorted.java)
+- [Container With Most Water — Java solution](03-Two-Pointers/ContainerWithMostWater.java)
+- [Container With Most Water — explanation & dry run](03-Two-Pointers/ContainerWithMostWater.md)
 
 ## 🧠 How I Approach a Problem
 1. Understand the problem and examples.
@@ -52,7 +54,9 @@ DSAwithJAVA/
 │   ├── StringBasics.java
 │   └── StringPatterns.java
 ├── 03-Two-Pointers/
-│   └── TwoSumSorted.java
+│   ├── TwoSumSorted.java
+│   ├── ContainerWithMostWater.java
+│   └── ContainerWithMostWater.md
 └── README.md
 ```
 
@@ -60,7 +64,7 @@ DSAwithJAVA/
 - [x] Array fundamentals and initial problem set
 - [x] String notes and Java examples
 - [x] HashMap and sliding-window examples
-- [x] Add a Two Pointers example with a dry-run-friendly implementation
+- [x] Add Two Pointers examples: Two Sum Sorted and Container With Most Water
 - [ ] Complete the Strings practice question list
 - [ ] Add more Two Pointers problems
 - [ ] Continue with Linked List and Stack
